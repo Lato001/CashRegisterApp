@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Avocado Toast",
+    "description": "Tostada de pan integral con palta fresca, tomate cherry y semillas.",
+    "category": "Comidas",
+    "price": 2500,
+    "img_url": "/ProductsImages/AvocadoToast.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Croissant",
+    "description": "Clásico croissant francés, hojaldrado y dorado al horno.",
+    "category": "Panadería",
+    "price": 900,
+    "img_url": "/ProductsImages/Croissant.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Milanesa con Guarnición",
+    "description": "Milanesa de ternera acompañada de papas fritas o ensalada.",
+    "category": "Platos principales",
+    "price": 3500,
+    "img_url": "/ProductsImages/MilanesaConGuarnicion.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Roll de Canela",
+    "description": "Roll esponjoso con relleno de canela y glaseado de azúcar.",
+    "category": "Pastelería",
+    "price": 1600,
+    "img_url": "/ProductsImages/RolCanela.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ciabata de J y Q",
+    "description": "Pan de Ciabata tostado con Jamon y Queso Gratinado",
+    "category": "Panadería",
+    "price": 1600,
+    "img_url": "/ProductsImages/CiabataJyQ.jpg"
+  }
+]

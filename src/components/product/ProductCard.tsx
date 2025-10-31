@@ -1,0 +1,34 @@
+import React from "react";
+
+interface Product {
+  id: number;
+  name: string;
+  description?: string;
+  category: string;
+  price: number;
+  img_url: string;
+}
+
+interface ProductCardProps {
+  product: Product;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const { name, description, price, img_url } = product;
+  return (
+    <div className="bg-white rounded-2xl shadow-md p-4 mt-5 hover:scale-105 transition-transform">
+      <img
+        src={img_url}
+        alt={name}
+        className="w-full h-48 object-cover rounded-xl mb-3"
+      />
+      <h1 className="text-xl font-semibold text-gray-800">{name}</h1>
+      <h2 className="text-gray-600 text-base mt-1">${price}</h2>
+      {description && (
+        <p className="text-gray-500 text-sm mt-2">{description}</p>
+      )}
+    </div>
+  );
+};
+
+export default ProductCard;
