@@ -38,5 +38,33 @@
     "category": "Panadería",
     "price": 1600,
     "img_url": "/ProductsImages/CiabataJyQ.jpg"
+  },{
+    "id": 6,
+    "name": "Ciabata de J y Q",
+    "description": "Pan de Ciabata tostado con Jamon y Queso Gratinado",
+    "category": "Panadería",
+    "price": 1600,
+    "img_url": "/ProductsImages/CiabataJyQ.jpg"
+  },{
+    "id": 7,
+    "name": "Ciabata de J y Q",
+    "description": "Pan de Ciabata tostado con Jamon y Queso Gratinado",
+    "category": "Panadería",
+    "price": 1600,
+    "img_url": "/ProductsImages/CiabataJyQ.jpg"
+  },{
+    "id": 8,
+    "name": "Ciabata de J y Q",
+    "description": "Pan de Ciabata tostado con Jamon y Queso Gratinado",
+    "category": "Panadería",
+    "price": 1600,
+    "img_url": "/ProductsImages/CiabataJyQ.jpg"
+  },{
+    "id": 9,
+    "name": "Ciabata de J y Q",
+    "description": "Pan de Ciabata tostado con Jamon y Queso Gratinado",
+    "category": "Panadería",
+    "price": 1600,
+    "img_url": "/ProductsImages/CiabataJyQ.jpg"
   }
 ]
