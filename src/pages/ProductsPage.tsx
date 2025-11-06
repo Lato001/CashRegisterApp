@@ -1,9 +1,11 @@
 import React from "react";
-
+import Navbar from "@/core/components/navbar/Navbar";
+import ProductsContainer from "@/core/components/product/ProductsContainer";
 function ProductsPage() {
   return (
     <div>
-      <h1>ProductsPage</h1>
+      <Navbar></Navbar>
+      <ProductsContainer></ProductsContainer>
     </div>
   );
 }
