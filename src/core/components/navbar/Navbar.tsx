@@ -6,11 +6,7 @@ function Navbar() {
       <h1 className="text-xl font-bold text-gray-800">☕ CashRegisterApp</h1>
       <div className="flex justify-around">
         {navbarLinks.map((link) => (
-          <Link
-            className="px-8 "
-            key={link.name}
-            to={`localhost:5173${link.redirect}`}
-          >
+          <Link className="px-8 " key={link.name} to={link.redirect}>
             {link.name}
           </Link>
         ))}
