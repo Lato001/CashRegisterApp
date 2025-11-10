@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <h2 className="text-gray-600 text-base mt-1">${price}</h2>
 
       {description && (
-        <p className="text-gray-500 text-sm mt-2 flex-grow">{description}</p>
+        <p className="text-gray-500 text-sm mt-2 grow">{description}</p>
       )}
     </div>
   );
