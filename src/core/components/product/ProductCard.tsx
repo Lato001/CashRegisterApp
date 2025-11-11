@@ -19,6 +19,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {description && (
         <p className="text-gray-500 text-sm mt-2 grow">{description}</p>
       )}
+
+      <button className="mt-3 cursor-pointer bg-gray-200 py-1.5 rounded-xl hover:bg-gray-400">
+        Add to chart
+      </button>
     </div>
   );
 };
