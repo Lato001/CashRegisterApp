@@ -1,30 +1,41 @@
-import initialProducts from "@/core/mocks/products.json";
+import type { Product } from "@/core/types/product";
 import ProductCard from "./ProductCard";
-import { useState } from "react";
+type ProductsContainerProps = {
+  products: Product[];
+};
+//import ProductCard from "./ProductCard";
+//import { useState } from "react";
+export default function ProductsContainer({
+  products,
+}: ProductsContainerProps) {
+  const productsData = products;
 
-function ProductsContainer() {
-  const [products] = useState(initialProducts);
-  const [filters, setFilters] = useState({
-    category: "all",
-    minPrice: 0,
-  });
-
-  const filterProducts = products.filter((product) => {
-    return (
-      product.price > filters.minPrice &&
-      (filters.category == "all" || product.category == filters.category)
-    );
-  });
-
-  const filteredProducts = (
+  return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 m-5">
-      {filterProducts.map((p) => (
-        <ProductCard key={p.id} product={p} />
+      {productsData.map((p) => (
+        <ProductCard key={p.id} product={p}></ProductCard>
       ))}
     </div>
   );
+  /*const [products] = useState(initialProducts);
+    const [filters, setFilters] = useState({
+      category: "all",
+      minPrice: 0,
+    });
 
-  return filteredProducts;
+    const filterProducts = products.filter((product) => {
+      return (
+        product.price > filters.minPrice &&
+        (filters.category == "all" || product.category == filters.category)
+      );
+    });
+
+    const filteredProducts = (
+      <div >
+        {filterProducts.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
+      </div>
+    );
+  */
 }
-
-export default ProductsContainer;
