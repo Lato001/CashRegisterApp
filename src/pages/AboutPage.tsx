@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "@/core/components/navbar/Navbar";
 function AboutPage() {
   return (

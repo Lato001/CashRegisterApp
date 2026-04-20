@@ -3,8 +3,7 @@ import ProductCard from "./ProductCard";
 type ProductsContainerProps = {
   products: Product[];
 };
-//import ProductCard from "./ProductCard";
-//import { useState } from "react";
+
 export default function ProductsContainer({
   products,
 }: ProductsContainerProps) {
@@ -17,25 +16,4 @@ export default function ProductsContainer({
       ))}
     </div>
   );
-  /*const [products] = useState(initialProducts);
-    const [filters, setFilters] = useState({
-      category: "all",
-      minPrice: 0,
-    });
-
-    const filterProducts = products.filter((product) => {
-      return (
-        product.price > filters.minPrice &&
-        (filters.category == "all" || product.category == filters.category)
-      );
-    });
-
-    const filteredProducts = (
-      <div >
-        {filterProducts.map((p) => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
-    );
-  */
 }
